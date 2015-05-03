@@ -73,6 +73,12 @@ function TextHighlighter(id, matchWhole)
         }
     };
 
+    // Show match count (-- match found)
+    this.showMatchCount = function(){
+        var matchCount = document.getElementById("matchCount");
+        matchCount.innerHTML = "(" + this.matchCount + " match found)";
+    };
+
     // Highlight text
     this.highlight = function(input)
     {
@@ -81,6 +87,7 @@ function TextHighlighter(id, matchWhole)
             return;
         this.setRegex(input);
         this.hiliteWords(searchIn);
+        this.showMatchCount();
     };
 
 }
