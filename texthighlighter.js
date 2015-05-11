@@ -63,20 +63,26 @@ function TextHighlighter(id, matchWhole)
     };
 
     // Erase highlighted text
-    this.erase = function()
-    {
+    this.erase = function () {
         var arr = document.getElementsByTagName(hiliteTag);
         while (arr.length && (el = arr[0])) {
             var parent = el.parentNode;
             parent.replaceChild(el.firstChild, el);
             parent.normalize();
         }
+        this.hideMatchCount();
     };
 
     // Show match count (-- match found)
     this.showMatchCount = function(){
         var matchCount = document.getElementById("matchCount");
         matchCount.innerHTML = "(" + this.matchCount + " match found)";
+    };
+
+    // Hide match count
+    this.hideMatchCount = function () {
+        var matchCount = document.getElementById("matchCount");
+        matchCount.innerHTML = "";
     };
 
     // Highlight text
