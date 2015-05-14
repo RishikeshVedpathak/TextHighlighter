@@ -1,3 +1,7 @@
+//Author - Rishikesh Vedpathak
+//Original source available at - https://github.com/RishikeshVedpathak/TextHighlighter
+//Released under the MIT License.
+
 function TextHighlighter(id, matchWhole)
 {
     var searchIn = document.getElementById(id) || document.body;
