@@ -5,7 +5,7 @@
 function TextHighlighter(id, matchWhole)
 {
     var searchIn = document.getElementById(id) || document.body;
-    var hiliteTag = "EM";
+    var hiliteTag = "MARK";
     var skipTags = new RegExp("^(?:" + hiliteTag + "|SCRIPT|FORM|SPAN)$");
     var backgroundColor = "#ff6";
     var foregroundColor = "#000";
