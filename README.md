@@ -1,4 +1,4 @@
-<h1>TextHighlighter v0.1</h1>
+<h1>TextHighlighter v1.0</h1>
 
 <i>"Easy to integrate, simple to use"</i>
 
