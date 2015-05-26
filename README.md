@@ -6,7 +6,7 @@
 <a href="https://htmlpreview.github.io/?https://github.com/RishikeshVedpathak/TextHighlighter/blob/master/demo/index.html">TextHighlighter-Demo</a>
 
 <h2>Easy to integrate</h2>
-<i>\<script type="text/javascript" src="texthighlighter.js"></script></i>
+<i>\<script type="text/javascript" src="texthighlighter.js">\</script></i>
 
 <h2>Simple to use</h2>
 <i>
